@@ -1,0 +1,10 @@
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\TaskManger.DAL.dll.config
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\TaskManger.DAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\TaskManger.DAL.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\EntityFramework.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\EntityFramework.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\obj\Debug\TaskManger.DAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\obj\Debug\TaskManger.DAL.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.DAL\obj\Debug\TaskManger.DAL.csprojResolveAssemblyReference.cache

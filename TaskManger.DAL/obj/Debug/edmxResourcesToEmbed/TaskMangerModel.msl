@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaskmangerdbModelStoreContainer" CdmEntityContainer="TaskmangerdbEntities1">
+    <EntitySetMapping Name="ParentTasks">
+      <EntityTypeMapping TypeName="TaskmangerdbModel.ParentTask">
+        <MappingFragment StoreEntitySet="ParentTask">
+          <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+          <ScalarProperty Name="Parent_Task" ColumnName="Parent_Task" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="TaskmangerdbModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="Task_ID" ColumnName="Task_ID" />
+          <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+          <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
+          <ScalarProperty Name="End_Date" ColumnName="End_Date" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIEW_TASKManger">
+      <EntityTypeMapping TypeName="TaskmangerdbModel.VIEW_TASKManger">
+        <MappingFragment StoreEntitySet="VIEW_TASKManger">
+          <ScalarProperty Name="Task_ID" ColumnName="Task_ID" />
+          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+          <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
+          <ScalarProperty Name="End_Date" ColumnName="End_Date" />
+          <ScalarProperty Name="TaskStartDate" ColumnName="TaskStartDate" />
+          <ScalarProperty Name="TaskEndDate" ColumnName="TaskEndDate" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+          <ScalarProperty Name="ParentTaskName" ColumnName="ParentTaskName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
