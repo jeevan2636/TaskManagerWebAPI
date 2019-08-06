@@ -1,0 +1,17 @@
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskManger.BAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskManger.BAL.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\AutoMapper.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\System.ValueTuple.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskMan.DAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskManger.Entities.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\EntityFramework.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskMan.DAL.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskMan.DAL.dll.config
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\TaskManger.Entities.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\AutoMapper.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\AutoMapper.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\System.ValueTuple.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\bin\Debug\EntityFramework.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\obj\Debug\TaskManger.BAL.csprojResolveAssemblyReference.cache
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\obj\Debug\TaskManger.BAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskManger.BAL\obj\Debug\TaskManger.BAL.pdb
