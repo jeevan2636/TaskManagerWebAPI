@@ -1,0 +1,9 @@
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\TaskMan.DAL.dll.config
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\TaskMan.DAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\TaskMan.DAL.pdb
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\EntityFramework.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\EntityFramework.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\obj\Debug\TaskMan.DAL.dll
+C:\Shah-FSE\CAPSULE\Task_Manger.API\TaskMan.DAL\obj\Debug\TaskMan.DAL.pdb

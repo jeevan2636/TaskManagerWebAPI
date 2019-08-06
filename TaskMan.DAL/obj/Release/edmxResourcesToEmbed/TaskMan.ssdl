@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaskmangerdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ParentTask">
+    <Key>
+      <PropertyRef Name="Parent_ID" />
+    </Key>
+    <Property Name="Parent_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Parent_Task" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Task_ID" />
+    </Key>
+    <Property Name="Task_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Parent_ID" Type="int" Nullable="false" />
+    <Property Name="TaskName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Priority" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Taskmangerdb.dbo.VIEW_TASKManger' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VIEW_TASKManger">
+    <Key>
+      <PropertyRef Name="Task_ID" />
+      <PropertyRef Name="TaskName" />
+      <PropertyRef Name="Start_Date" />
+      <PropertyRef Name="End_Date" />
+      <PropertyRef Name="Priority" />
+      <PropertyRef Name="Parent_ID" />
+      <PropertyRef Name="ParentTaskName" />
+    </Key>
+    <Property Name="Task_ID" Type="int" Nullable="false" />
+    <Property Name="TaskName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="TaskStartDate" Type="varchar" MaxLength="10" />
+    <Property Name="TaskEndDate" Type="varchar" MaxLength="10" />
+    <Property Name="Priority" Type="int" Nullable="false" />
+    <Property Name="Parent_ID" Type="int" Nullable="false" />
+    <Property Name="ParentTaskName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Task_ParentTask_Parent_ID">
+    <End Role="ParentTask" Type="Self.ParentTask" Multiplicity="1" />
+    <End Role="Task" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParentTask">
+        <PropertyRef Name="Parent_ID" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Parent_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TaskmangerdbModelStoreContainer">
+    <EntitySet Name="ParentTask" EntityType="Self.ParentTask" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VIEW_TASKManger" EntityType="Self.VIEW_TASKManger" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VIEW_TASKManger].[Task_ID] AS [Task_ID], 
+    [VIEW_TASKManger].[TaskName] AS [TaskName], 
+    [VIEW_TASKManger].[Start_Date] AS [Start_Date], 
+    [VIEW_TASKManger].[End_Date] AS [End_Date], 
+    [VIEW_TASKManger].[TaskStartDate] AS [TaskStartDate], 
+    [VIEW_TASKManger].[TaskEndDate] AS [TaskEndDate], 
+    [VIEW_TASKManger].[Priority] AS [Priority], 
+    [VIEW_TASKManger].[Parent_ID] AS [Parent_ID], 
+    [VIEW_TASKManger].[ParentTaskName] AS [ParentTaskName]
+    FROM [dbo].[VIEW_TASKManger] AS [VIEW_TASKManger]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Task_ParentTask_Parent_ID" Association="Self.FK_Task_ParentTask_Parent_ID">
+      <End Role="ParentTask" EntitySet="ParentTask" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
